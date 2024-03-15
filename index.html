@@ -34,17 +34,6 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
     </style>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
@@ -149,7 +138,6 @@
 <!-- Overview. -->
 <section class="section">
     <div class="container is-max-desktop">
-        <h2 class="title is-3">Overview</h2>
         <image src="./static/image/motiv.png"><br>
             <div class="content has-text-justified">
                 <p>
@@ -208,9 +196,9 @@
                 <image src="./static/image/network.png"><br>
                     <div class="content has-text-justified">
                         <p>
-                            <b>Top</b>: The overall framework of SkateFormer. <br>
-                            <b>Bottom left</b>: The Skate-MSA of SkateFormer. <br>
-                            <b>Bottom right</b>: Skate-Type partition and reverse.
+                            <b>Top.</b> The overall framework of SkateFormer. <br>
+                            <b>Bottom left.</b> The Skate-MSA of SkateFormer. <br>
+                            <b>Bottom right.</b> Skate-Type partition and reverse.
                         </p>
                     </div>
             </div>
@@ -218,7 +206,7 @@
     </div>
 </section>
 
-<!-- Abstract. -->
+<!-- Discussion. -->
 <section class="section">
     <div class="container is-max-desktop">
         <h2 class="title is-3">Discussion on Various Partition-Based Approaches</h2>
@@ -227,7 +215,8 @@
                 <image src="./static/image/novelty.PNG"><br>
                     <div class="content has-text-justified">
                         <p>
-                            S-Type, T-Type, S-Attn, T-Attn, T-Conv, and ST-Attn indicate 'physically neighboring
+                            <b>Comparison with existing transformer-based methods.</b> S-Type, T-Type, S-Attn, T-Attn,
+                            T-Conv, and ST-Attn indicate 'physically neighboring
                             joints', 'local motion', ‘skeletal attention’, ‘temporal attention’,
                             ‘temporal convolution’ and ‘skeletal-temporal attention’, respectively.
                         </p>
@@ -237,9 +226,10 @@
     </div>
 </section>
 
+<!-- Performance Comparison. -->
 <section class="section">
     <div class="container is-max-desktop">
-        <h2 class="title is-3">Experiment Details</h2>
+        <h2 class="title is-3">Ensemble Performance Comparison</h2>
         <div class="columns is-centered has-text-centered">
             <div class="column is-full">
                 <image src="./static/image/table1.PNG"><br>
@@ -257,12 +247,85 @@
                 <image src="./static/image/table2.PNG"><br>
                     <div class="content has-text-justified">
                         <p>
-                            <b>Top-1 accuracy of skeleton-based interaction recognition methods.</b>
+                            <b>Top-1 accuracy of skeleton-based interaction recognition methods.</b> Human interaction
+                            recognition is a
+                            sub-part of skeleton-based action recognition, specifically focusing on scenarios
+                            where two or more individuals coexist within a single action.
                         </p>
                     </div>
             </div>
         </div>
     </div>
+    </div>
+</section>
+
+<!-- Computational Complexity Comparision. -->
+<section class="section">
+    <div class="container is-max-desktop">
+        <h2 class="title is-3">Computational Complexity Comparision</h2>
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-full">
+                <image src="./static/image/table4.PNG"><br>
+                    <div class="content has-text-justified">
+                        <p>
+                            Comparative analysis of SkateFormer with other methods by parameters,
+                            FLOPs, inference time, and average top-1 accuracy for joint modality.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Single Modality Comparision. -->
+<section class="section">
+    <div class="container is-max-desktop">
+        <h2 class="title is-3">Single Modality Comparision</h2>
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-full">
+                <image src="./static/image/table3.PNG"><br>
+                    <div class="content has-text-justified">
+                        <p>
+                            (i) J - joint modality; (ii) B - bone modality; (iii) JM - joint motion
+                            modality; and (iv) BM - bone motion modality.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Analysis of Partition-specific Attention. -->
+<section class="section">
+    <div class="container is-max-desktop">
+        <h2 class="title is-3">Analysis of Partition-specific Attention</h2>
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-full">
+                <image src="./static/image/score.png"><br>
+                    <div class="content has-text-justified">
+                        <p>
+                            <b>The activation level of Skate-Types according to action labels.</b> For 'sitting down'
+                            (action label: 7) and 'standing up' (action label: 8), Skate-Type-3 or Skate-Type-4
+                            exhibited pronounced activations, while 'reading' (action label: 10) and 'writing' (action
+                            label: 11) prominently activated Skate-Type-1.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@misc{do2024skateformer,
+      title={SkateFormer: Skeletal-Temporal Transformer for Human Action Recognition},
+      author={Jeonghyeok Do and Munchurl Kim},
+      year={2024},
+      eprint={2403.09508},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}</code></pre>
     </div>
 </section>
 

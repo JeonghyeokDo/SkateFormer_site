@@ -3,4 +3,4 @@
 ---
 ### Project Page
 
-https://jeonghyeokdo.github.io/SkateFormer-site
+https://jeonghyeokdo.github.io/SkateFormer_site

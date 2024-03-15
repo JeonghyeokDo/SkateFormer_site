@@ -4,3 +4,7 @@
 ### Project Page
 
 https://jeonghyeokdo.github.io/SkateFormer_site
+
+### Codes and Pretrained models
+
+https://github.com/JeonghyeokDo/SkateFormer

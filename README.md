@@ -7,4 +7,4 @@ https://jeonghyeokdo.github.io/SkateFormer_site
 
 ### Codes and Pretrained models
 
-https://github.com/JeonghyeokDo/SkateFormer
+https://github.com/KAIST-VICLab/SkateFormer
